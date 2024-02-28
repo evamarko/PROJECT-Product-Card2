@@ -1,0 +1,149 @@
+:root {
+  --product-background: #faf9f6;
+  --product-grey: grey;
+  --product-light-grey: lightgrey;
+  --product-black: black;
+  --product-white: #fff;
+  --product-yellow: yellow;
+  --product-red: red;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--product-black);
+  background-color: var(--product-background);
+}
+
+.product-card {
+  width: 1000px;
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--product-white);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.bestseller-badge {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--product-yellow);
+  padding: 10px 20px;
+  border-radius: 5px;
+  top: 30px;
+  left: -30px;
+}
+
+.product-image {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-information-container {
+  width: 500px;
+  padding: 30px;
+}
+
+.brand-badge {
+  color: var(--product-grey);
+  font-size: 18px;
+}
+
+.product-headline {
+  margin: 20px 0;
+}
+
+.product-price-container {
+  margin-bottom: 20px;
+}
+
+.discount {
+  color: var(--product-white);
+  background-color: var(--product-red);
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.price-now {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price-before {
+  color: var(--product-grey);
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.product-sizing-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-size {
+  font-size: 18px;
+}
+
+.size-guide,
+.sizing-tips,
+.check-in-store {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.product-sizes-container {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.product-size {
+  border: 1px solid var(--product-light-grey);
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.product-size:hover {
+  border: 1px solid var(--product-black);
+}
+
+.product-button {
+  background-color: var(--product-yellow);
+  padding: 18px 0;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.product-button:hover {
+  filter: brightness(95%);
+}
+
+.check-in-store {
+  text-align: center;
+  font-size: 13px;
+}
